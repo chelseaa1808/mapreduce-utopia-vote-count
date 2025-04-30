@@ -18,8 +18,8 @@ CandidateA 2 CandidateB 1
 1. Start Hadoop environment (Cloudera VM or Docker).
 2. Upload `poll_input.txt` to HDFS.
    # Upload to HDFS
-<pre>``` hdfs dfs -mkdir -p /user/cloudera/utopia
-hdfs dfs -put poll_input.txt /user/cloudera/utopia/ ```
+<pre> hdfs dfs -mkdir -p /user/cloudera/utopia
+hdfs dfs -put poll_input.txt /user/cloudera/utopia/ 
 </pre>
 
 4. Run the Hadoop streaming job with `mapper.py` and `reducer.py`.

@@ -18,19 +18,21 @@ CandidateA 2 CandidateB 1
 1. Start Hadoop environment (Cloudera VM or Docker).
 2. Upload `poll_input.txt` to HDFS.
    # Upload to HDFS
-hdfs dfs -mkdir -p /user/cloudera/utopia
-hdfs dfs -put poll_input.txt /user/cloudera/utopia/
+``` hdfs dfs -mkdir -p /user/cloudera/utopia
+hdfs dfs -put poll_input.txt /user/cloudera/utopia/ ``` 
 4. Run the Hadoop streaming job with `mapper.py` and `reducer.py`.
    # Run MapReduce
-hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
+``` hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
   -input /user/cloudera/utopia/poll_input.txt \
   -output /user/cloudera/utopia/output \
   -mapper mapper.py \
   -reducer reducer.py \
   -file mapper.py \
-  -file reducer.py
+  -file reducer.py ``` 
 
 5. View results from HDFS output.
+   # Check Output
+``` hdfs dfs -cat /user/cloudera/utopia/output/part-00000``` 
 
 ## Author
 

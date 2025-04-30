@@ -1,7 +1,7 @@
 
 # Utopia Vote Count - Hadoop MapReduce (Python Version)
 
-This project replicates a Java-based MapReduce tutorial using Python and Hadoop Streaming. The goal is to analyze poll results from the fictional Utopia dataset by counting total votes per candidate.
+This project replicates a Java-based MapReduce tutorial using Python and Hadoop Streaming (https://github.com/satishpatil2k13/Horton_Works-Hadoop-Tutorials/blob/master/Community/T09_Write_And_Run_Your_Own_MapReduce_Java_Program_Poll_Result_Analysis.md). The goal is to analyze poll results from the fictional Utopia dataset by counting total votes per candidate.
 
 ## Example Input
 Utopia|CandidateA Utopia|CandidateB Utopia|CandidateA

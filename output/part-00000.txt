@@ -1,0 +1,3 @@
+CandidateA    3
+CandidateB    1
+CandidateC    1
